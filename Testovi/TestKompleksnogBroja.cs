@@ -42,5 +42,21 @@ namespace Testovi
             KompleksniBroj kb2 = new KompleksniBroj(7, 9);
             Assert.AreEqual(16, (kb1 + kb2).ImaginarniDio);
         }
+
+        [TestMethod]
+        public void OduzimanjeDvaKompleksnaBrojaDajeKompleksniBrojSRealnimDjelomJednakimRazliciRealnihDjelova()
+        {
+            KompleksniBroj kb1 = new KompleksniBroj(7, 9);
+            KompleksniBroj kb2 = new KompleksniBroj(4, 7);
+            Assert.AreEqual(3, (kb1 - kb2).RealniDio);
+        }
+
+        [TestMethod]
+        public void OduzimanjeDvaKompleksnaBrojaDajeKompleksniBrojSImaginarnimDjelomJednakimRazliciImaginarnihDjelova()
+        {
+            KompleksniBroj kb1 = new KompleksniBroj(7, 9);
+            KompleksniBroj kb2 = new KompleksniBroj(4, 7);
+            Assert.AreEqual(2, (kb1 - kb2).ImaginarniDio);
+        }
     }
 }

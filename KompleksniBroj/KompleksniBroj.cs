@@ -16,6 +16,12 @@ namespace Vsite.Oom
         static public KompleksniBroj operator +(KompleksniBroj br1, KompleksniBroj br2) {
             return new Oom.KompleksniBroj(br1.RealniDio + br2.RealniDio, br1.ImaginarniDio + br2.ImaginarniDio);
         }
+
+        static public KompleksniBroj operator -(KompleksniBroj br1, KompleksniBroj br2)
+        {
+            return new Oom.KompleksniBroj(br1.RealniDio - br2.RealniDio, br1.ImaginarniDio - br2.ImaginarniDio);
+
+        }
         public double RealniDio;
         public double ImaginarniDio;
     }
